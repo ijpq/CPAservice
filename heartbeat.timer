@@ -1,0 +1,10 @@
+[Unit]
+Description=Send monitoring heartbeat once a day
+
+[Timer]
+OnCalendar=*-*-* 09:00:00
+Persistent=true
+AccuracySec=1min
+
+[Install]
+WantedBy=timers.target

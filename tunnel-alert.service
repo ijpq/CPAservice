@@ -1,0 +1,7 @@
+[Unit]
+Description=Cloudflare Tunnel health watcher
+After=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/tunnel-alert.sh

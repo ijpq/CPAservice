@@ -1,0 +1,7 @@
+[Unit]
+Description=Daily monitoring heartbeat
+After=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/heartbeat.sh

@@ -1,0 +1,7 @@
+[Unit]
+Description=Memory pressure early-warning check
+After=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/mem-alert.sh
